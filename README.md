@@ -1,8 +1,7 @@
 # HNFakeContacts
 ![OpalImagePicker](https://github.com/sunlight3d/HNFakeContacts/blob/master/images/mainscreen.png)
 
-[![Version](https://img.shields.io/cocoapods/v/OpalImagePicker.svg?style=flat)](http://cocoadocs.org/docsets/OpalImagePicker)
-[![License](https://img.shields.io/cocoapods/l/OpalImagePicker.svg?style=flat)](http://cocoadocs.org/docsets/OpalImagePicker)
+[![Version]
 ![Swift](https://img.shields.io/badge/%20in-swift%203.0-orange.svg)
 
 
