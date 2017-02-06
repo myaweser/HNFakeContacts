@@ -13,6 +13,49 @@ import AddressBook
 import AddressBookUI
 
 class MainViewController: UIViewController {
+    
+    var lbltitle: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont(name: UIFont.fontHelveticaNeue(), size: UIDevice.getFloatValue(iphone5: 19, iphone6: 19, iphone6P: 19, ipad: 22, ipadPro: 22))
+        label.text = "Create Dummy Contacts for ios devices"
+        label.numberOfLines = 3
+        label.textColor = UIColor.appColor()
+        label.textAlignment = .center
+        return label
+    }()
+    
+    var lblAuthor: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont(name: UIFont.fontHelveticaNeue(), size: UIDevice.getFloatValue(iphone5: 16, iphone6: 16, iphone6P: 16, ipad: 22, ipadPro: 22))
+        label.text = "Author: Nguyen Duc Hoang"
+        label.textColor = UIColor.darkGray
+        label.textAlignment = .left
+        return label
+    }()
+    
+    var lblSkype: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont(name: UIFont.fontHelveticaNeue(), size: UIDevice.getFloatValue(iphone5: 16, iphone6: 16, iphone6P: 16, ipad: 22, ipadPro: 22))
+        label.text = "Skype: sunlight3d@outlook.com"
+        label.textColor = UIColor.darkGray
+        label.textAlignment = .left
+        return label
+    }()
+    
+    var lblFacebook: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont(name: UIFont.fontHelveticaNeue(), size: UIDevice.getFloatValue(iphone5: 16, iphone6: 16, iphone6P: 16, ipad: 22, ipadPro: 22))
+        label.text = "FacebookID: nguyen.duc.hoang.bk"
+        label.textColor = UIColor.darkGray
+        label.textAlignment = .left
+        return label
+    }()
+    
+    
     let fetchRequest: CNContactFetchRequest = CNContactFetchRequest(keysToFetch: [
         CNContactGivenNameKey as CNKeyDescriptor,
         CNContactFamilyNameKey as CNKeyDescriptor,
@@ -179,6 +222,11 @@ class MainViewController: UIViewController {
     override func loadView() {
         super.loadView()
         view.backgroundColor = UIColor.white
+        view.addSubview(lbltitle)
+        lbltitle.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 50).isActive = true
+        lbltitle.rightAnchor.constraint(equalTo: view.leftAnchor, constant: -50).isActive = true
+        lbltitle.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        lbltitle.topAnchor.constraint(equalTo: view.topAnchor, constant: UIDevice.getFloatValue(iphone5: 50, iphone6: 50, iphone6P: 50, ipad: 70, ipadPro: 70)).isActive = true
         
         view.addSubview(btnClearContacts)
         btnClearContacts.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -198,6 +246,19 @@ class MainViewController: UIViewController {
         btnShowContacts.widthAnchor.constraint(equalToConstant: 288).isActive = true
         btnShowContacts.heightAnchor.constraint(equalToConstant: 50).isActive = true
         btnShowContacts.topAnchor.constraint(equalTo: btnAddContacts.bottomAnchor, constant: 40).isActive = true
+        
+        view.addSubview(lblAuthor)
+        lblAuthor.leftAnchor.constraint(equalTo: view.leftAnchor, constant: UIDevice.getFloatValue(iphone5: 16, iphone6: 16, iphone6P: 16, ipad: 25, ipadPro: 25)).isActive = true
+        lblAuthor.topAnchor.constraint(equalTo: lbltitle.bottomAnchor, constant: 30).isActive = true
+        
+        view.addSubview(lblSkype)
+        lblSkype.leftAnchor.constraint(equalTo: lblAuthor.leftAnchor).isActive = true
+        lblSkype.topAnchor.constraint(equalTo: lblAuthor.bottomAnchor, constant: 10).isActive = true
+        
+        view.addSubview(lblFacebook)
+        lblFacebook.leftAnchor.constraint(equalTo: lblAuthor.leftAnchor).isActive = true
+        lblFacebook.topAnchor.constraint(equalTo: lblSkype.bottomAnchor, constant: 10).isActive = true
+        
     }
     
     override func viewDidLoad() {
