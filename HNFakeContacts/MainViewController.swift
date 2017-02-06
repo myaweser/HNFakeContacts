@@ -210,6 +210,9 @@ class MainViewController: UIViewController {
                 index = index + 1
                 print("index = ", index)
             }
+            let alert = UIAlertController(title: "Information", message: "Updating \(contacts.count) finished !", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         } catch {
             print("error get contact list")
         }
