@@ -22,7 +22,9 @@ Download code and open .xcworkspace file. If error occurs, please contact with a
 ## Author
 Name: Nguyen Duc Hoang
 Skype: sunlight3d@outlook.com
+
 Facebook: https://www.facebook.com/nguyen.duc.hoang.bk
+
 AppStore: https://itunes.apple.com/us/developer/nguyen-duc-hoang/id1188729976
 
 ## Contribute
