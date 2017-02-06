@@ -1,7 +1,6 @@
 # HNFakeContacts
 ![OpalImagePicker](https://github.com/sunlight3d/HNFakeContacts/blob/master/images/mainscreen.png)
 
-[![Version]
 ![Swift](https://img.shields.io/badge/%20in-swift%203.0-orange.svg)
 
 
@@ -31,3 +30,6 @@ AppStore: https://itunes.apple.com/us/developer/nguyen-duc-hoang/id1188729976
 ## Contribute
 
 We would love you to contribute to **HNFakeContacts**
+If this project help you reduce time to develop, you can give me a cup of coffee :) 
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A8YE92K9QM7NA)
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A8YE92K9QM7NA)
