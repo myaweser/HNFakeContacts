@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C732A37E0435FB6E7BC6AE3 /* Pods_HNFakeContacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436F06D97A6CB87B76ECEE1C /* Pods_HNFakeContacts.framework */; };
+		FA301E9C1E3A422D00E98263 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA301E9B1E3A422D00E98263 /* AppDelegate.swift */; };
+		FA301EA41E3A422D00E98263 /* HNFakeContacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA301EA21E3A422D00E98263 /* HNFakeContacts.xcdatamodeld */; };
+		FA301EA61E3A422D00E98263 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA301EA51E3A422D00E98263 /* Assets.xcassets */; };
+		FA301EA91E3A422D00E98263 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA301EA71E3A422D00E98263 /* LaunchScreen.storyboard */; };
+		FA301EB11E3A434000E98263 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA301EB01E3A434000E98263 /* MainViewController.swift */; };
+		FA301EC91E3A43F300E98263 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA301EB31E3A43F300E98263 /* AlertView.swift */; };
+		FA301ECA1E3A43F300E98263 /* Date+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA301EB41E3A43F300E98263 /* Date+Utility.swift */; };
+		FA301ECB1E3A43F300E98263 /* Double+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA301EB51E3A43F300E98263 /* Double+Utility.swift */; };
+		FA301ECC1E3A43F300E98263 /* GMSMarker+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA301EB61E3A43F300E98263 /* GMSMarker+Utility.swift */; };
+		FA301ECD1E3A43F300E98263 /* HNDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA301EB71E3A43F300E98263 /* HNDatePickerView.swift */; };
+		FA301ECE1E3A43F300E98263 /* String+Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA301EB81E3A43F300E98263 /* String+Resource.swift */; };
+		FA301ECF1E3A43F300E98263 /* String+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA301EB91E3A43F300E98263 /* String+Utility.swift */; };
+		FA301ED01E3A43F300E98263 /* UIButton+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA301EBA1E3A43F300E98263 /* UIButton+Utility.swift */; };
+		FA301ED11E3A43F300E98263 /* UIColor+Utitily.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA301EBB1E3A43F300E98263 /* UIColor+Utitily.swift */; };
+		FA301ED21E3A43F300E98263 /* UIDevice+Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA301EBC1E3A43F300E98263 /* UIDevice+Check.swift */; };
+		FA301ED31E3A43F300E98263 /* UIFont+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA301EBD1E3A43F300E98263 /* UIFont+Name.swift */; };
+		FA301ED41E3A43F300E98263 /* UIImage+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA301EBE1E3A43F300E98263 /* UIImage+Utility.swift */; };
+		FA301ED51E3A43F300E98263 /* UIImageView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA301EBF1E3A43F300E98263 /* UIImageView+Utility.swift */; };
+		FA301ED61E3A43F300E98263 /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA301EC31E3A43F300E98263 /* UIPlaceHolderTextView.m */; };
+		FA301ED71E3A43F300E98263 /* UISearchBar+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA301EC41E3A43F300E98263 /* UISearchBar+Utility.swift */; };
+		FA301ED81E3A43F300E98263 /* UITextField+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA301EC51E3A43F300E98263 /* UITextField+Utility.swift */; };
+		FA301ED91E3A43F300E98263 /* UITextView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA301EC61E3A43F300E98263 /* UITextView+Layout.swift */; };
+		FA301EDA1E3A43F300E98263 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA301EC71E3A43F300E98263 /* UIView+Layout.swift */; };
+		FA301EDB1E3A43F300E98263 /* UIViewController+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA301EC81E3A43F300E98263 /* UIViewController+Utility.swift */; };
+		FA301EDD1E3A478600E98263 /* DummyVCard.vcf in Resources */ = {isa = PBXBuildFile; fileRef = FA301EDC1E3A478600E98263 /* DummyVCard.vcf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		436F06D97A6CB87B76ECEE1C /* Pods_HNFakeContacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HNFakeContacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFD76D12264938B33E1B3647 /* Pods-HNFakeContacts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNFakeContacts.release.xcconfig"; path = "Pods/Target Support Files/Pods-HNFakeContacts/Pods-HNFakeContacts.release.xcconfig"; sourceTree = "<group>"; };
+		F86B41BA4F7B58CDC8D11704 /* Pods-HNFakeContacts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNFakeContacts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HNFakeContacts/Pods-HNFakeContacts.debug.xcconfig"; sourceTree = "<group>"; };
+		FA301E981E3A422D00E98263 /* HNFakeContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNFakeContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA301E9B1E3A422D00E98263 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA301EA31E3A422D00E98263 /* HNFakeContacts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HNFakeContacts.xcdatamodel; sourceTree = "<group>"; };
+		FA301EA51E3A422D00E98263 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA301EA81E3A422D00E98263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA301EAA1E3A422D00E98263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA301EB01E3A434000E98263 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FA301EB31E3A43F300E98263 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		FA301EB41E3A43F300E98263 /* Date+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Utility.swift"; sourceTree = "<group>"; };
+		FA301EB51E3A43F300E98263 /* Double+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Utility.swift"; sourceTree = "<group>"; };
+		FA301EB61E3A43F300E98263 /* GMSMarker+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GMSMarker+Utility.swift"; sourceTree = "<group>"; };
+		FA301EB71E3A43F300E98263 /* HNDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNDatePickerView.swift; sourceTree = "<group>"; };
+		FA301EB81E3A43F300E98263 /* String+Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Resource.swift"; sourceTree = "<group>"; };
+		FA301EB91E3A43F300E98263 /* String+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Utility.swift"; sourceTree = "<group>"; };
+		FA301EBA1E3A43F300E98263 /* UIButton+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Utility.swift"; sourceTree = "<group>"; };
+		FA301EBB1E3A43F300E98263 /* UIColor+Utitily.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utitily.swift"; sourceTree = "<group>"; };
+		FA301EBC1E3A43F300E98263 /* UIDevice+Check.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Check.swift"; sourceTree = "<group>"; };
+		FA301EBD1E3A43F300E98263 /* UIFont+Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Name.swift"; sourceTree = "<group>"; };
+		FA301EBE1E3A43F300E98263 /* UIImage+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Utility.swift"; sourceTree = "<group>"; };
+		FA301EBF1E3A43F300E98263 /* UIImageView+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Utility.swift"; sourceTree = "<group>"; };
+		FA301EC11E3A43F300E98263 /* IntroApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IntroApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		FA301EC21E3A43F300E98263 /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
+		FA301EC31E3A43F300E98263 /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceHolderTextView.m; sourceTree = "<group>"; };
+		FA301EC41E3A43F300E98263 /* UISearchBar+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Utility.swift"; sourceTree = "<group>"; };
+		FA301EC51E3A43F300E98263 /* UITextField+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Utility.swift"; sourceTree = "<group>"; };
+		FA301EC61E3A43F300E98263 /* UITextView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Layout.swift"; sourceTree = "<group>"; };
+		FA301EC71E3A43F300E98263 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		FA301EC81E3A43F300E98263 /* UIViewController+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utility.swift"; sourceTree = "<group>"; };
+		FA301EDC1E3A478600E98263 /* DummyVCard.vcf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DummyVCard.vcf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA301E951E3A422D00E98263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C732A37E0435FB6E7BC6AE3 /* Pods_HNFakeContacts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B904F1ACB53B6923A3C35696 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				436F06D97A6CB87B76ECEE1C /* Pods_HNFakeContacts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA301E8F1E3A422D00E98263 = {
+			isa = PBXGroup;
+			children = (
+				FA301E9A1E3A422D00E98263 /* HNFakeContacts */,
+				FA301E991E3A422D00E98263 /* Products */,
+				FE615FD5A1A44AD2E39C9EF1 /* Pods */,
+				B904F1ACB53B6923A3C35696 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA301E991E3A422D00E98263 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA301E981E3A422D00E98263 /* HNFakeContacts.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA301E9A1E3A422D00E98263 /* HNFakeContacts */ = {
+			isa = PBXGroup;
+			children = (
+				FA301EB21E3A43F300E98263 /* Libraries */,
+				FA301E9B1E3A422D00E98263 /* AppDelegate.swift */,
+				FA301EA51E3A422D00E98263 /* Assets.xcassets */,
+				FA301EA71E3A422D00E98263 /* LaunchScreen.storyboard */,
+				FA301EAA1E3A422D00E98263 /* Info.plist */,
+				FA301EDC1E3A478600E98263 /* DummyVCard.vcf */,
+				FA301EA21E3A422D00E98263 /* HNFakeContacts.xcdatamodeld */,
+				FA301EB01E3A434000E98263 /* MainViewController.swift */,
+			);
+			path = HNFakeContacts;
+			sourceTree = "<group>";
+		};
+		FA301EB21E3A43F300E98263 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				FA301EB31E3A43F300E98263 /* AlertView.swift */,
+				FA301EB41E3A43F300E98263 /* Date+Utility.swift */,
+				FA301EB51E3A43F300E98263 /* Double+Utility.swift */,
+				FA301EB61E3A43F300E98263 /* GMSMarker+Utility.swift */,
+				FA301EB71E3A43F300E98263 /* HNDatePickerView.swift */,
+				FA301EB81E3A43F300E98263 /* String+Resource.swift */,
+				FA301EB91E3A43F300E98263 /* String+Utility.swift */,
+				FA301EBA1E3A43F300E98263 /* UIButton+Utility.swift */,
+				FA301EBB1E3A43F300E98263 /* UIColor+Utitily.swift */,
+				FA301EBC1E3A43F300E98263 /* UIDevice+Check.swift */,
+				FA301EBD1E3A43F300E98263 /* UIFont+Name.swift */,
+				FA301EBE1E3A43F300E98263 /* UIImage+Utility.swift */,
+				FA301EBF1E3A43F300E98263 /* UIImageView+Utility.swift */,
+				FA301EC01E3A43F300E98263 /* UIPlaceHolderTextView */,
+				FA301EC41E3A43F300E98263 /* UISearchBar+Utility.swift */,
+				FA301EC51E3A43F300E98263 /* UITextField+Utility.swift */,
+				FA301EC61E3A43F300E98263 /* UITextView+Layout.swift */,
+				FA301EC71E3A43F300E98263 /* UIView+Layout.swift */,
+				FA301EC81E3A43F300E98263 /* UIViewController+Utility.swift */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		FA301EC01E3A43F300E98263 /* UIPlaceHolderTextView */ = {
+			isa = PBXGroup;
+			children = (
+				FA301EC11E3A43F300E98263 /* IntroApp-Bridging-Header.h */,
+				FA301EC21E3A43F300E98263 /* UIPlaceHolderTextView.h */,
+				FA301EC31E3A43F300E98263 /* UIPlaceHolderTextView.m */,
+			);
+			path = UIPlaceHolderTextView;
+			sourceTree = "<group>";
+		};
+		FE615FD5A1A44AD2E39C9EF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F86B41BA4F7B58CDC8D11704 /* Pods-HNFakeContacts.debug.xcconfig */,
+				BFD76D12264938B33E1B3647 /* Pods-HNFakeContacts.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA301E971E3A422D00E98263 /* HNFakeContacts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA301EAD1E3A422D00E98263 /* Build configuration list for PBXNativeTarget "HNFakeContacts" */;
+			buildPhases = (
+				18176D754C6CB81EC6E89B1A /* [CP] Check Pods Manifest.lock */,
+				FA301E941E3A422D00E98263 /* Sources */,
+				FA301E951E3A422D00E98263 /* Frameworks */,
+				FA301E961E3A422D00E98263 /* Resources */,
+				7E008AA4F74DCB88AA1D3288 /* [CP] Embed Pods Frameworks */,
+				FF433C2C026BD6898726C58D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HNFakeContacts;
+			productName = HNFakeContacts;
+			productReference = FA301E981E3A422D00E98263 /* HNFakeContacts.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA301E901E3A422D00E98263 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Nguyen Duc Hoang";
+				TargetAttributes = {
+					FA301E971E3A422D00E98263 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = GUDP73Y3HP;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FA301E931E3A422D00E98263 /* Build configuration list for PBXProject "HNFakeContacts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA301E8F1E3A422D00E98263;
+			productRefGroup = FA301E991E3A422D00E98263 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA301E971E3A422D00E98263 /* HNFakeContacts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA301E961E3A422D00E98263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA301EDD1E3A478600E98263 /* DummyVCard.vcf in Resources */,
+				FA301EA91E3A422D00E98263 /* LaunchScreen.storyboard in Resources */,
+				FA301EA61E3A422D00E98263 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18176D754C6CB81EC6E89B1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7E008AA4F74DCB88AA1D3288 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HNFakeContacts/Pods-HNFakeContacts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF433C2C026BD6898726C58D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HNFakeContacts/Pods-HNFakeContacts-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA301E941E3A422D00E98263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA301ED21E3A43F300E98263 /* UIDevice+Check.swift in Sources */,
+				FA301ED31E3A43F300E98263 /* UIFont+Name.swift in Sources */,
+				FA301ED01E3A43F300E98263 /* UIButton+Utility.swift in Sources */,
+				FA301EDB1E3A43F300E98263 /* UIViewController+Utility.swift in Sources */,
+				FA301EB11E3A434000E98263 /* MainViewController.swift in Sources */,
+				FA301ED71E3A43F300E98263 /* UISearchBar+Utility.swift in Sources */,
+				FA301EDA1E3A43F300E98263 /* UIView+Layout.swift in Sources */,
+				FA301ED81E3A43F300E98263 /* UITextField+Utility.swift in Sources */,
+				FA301ECF1E3A43F300E98263 /* String+Utility.swift in Sources */,
+				FA301EC91E3A43F300E98263 /* AlertView.swift in Sources */,
+				FA301ED11E3A43F300E98263 /* UIColor+Utitily.swift in Sources */,
+				FA301ECA1E3A43F300E98263 /* Date+Utility.swift in Sources */,
+				FA301ECC1E3A43F300E98263 /* GMSMarker+Utility.swift in Sources */,
+				FA301ECB1E3A43F300E98263 /* Double+Utility.swift in Sources */,
+				FA301E9C1E3A422D00E98263 /* AppDelegate.swift in Sources */,
+				FA301ECD1E3A43F300E98263 /* HNDatePickerView.swift in Sources */,
+				FA301EA41E3A422D00E98263 /* HNFakeContacts.xcdatamodeld in Sources */,
+				FA301ED61E3A43F300E98263 /* UIPlaceHolderTextView.m in Sources */,
+				FA301ED41E3A43F300E98263 /* UIImage+Utility.swift in Sources */,
+				FA301ED91E3A43F300E98263 /* UITextView+Layout.swift in Sources */,
+				FA301ECE1E3A43F300E98263 /* String+Resource.swift in Sources */,
+				FA301ED51E3A43F300E98263 /* UIImageView+Utility.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA301EA71E3A422D00E98263 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA301EA81E3A422D00E98263 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA301EAB1E3A422D00E98263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA301EAC1E3A422D00E98263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA301EAE1E3A422D00E98263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F86B41BA4F7B58CDC8D11704 /* Pods-HNFakeContacts.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GUDP73Y3HP;
+				INFOPLIST_FILE = HNFakeContacts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appburger.HNFakeContacts.HNFakeContacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FA301EAF1E3A422D00E98263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFD76D12264938B33E1B3647 /* Pods-HNFakeContacts.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GUDP73Y3HP;
+				INFOPLIST_FILE = HNFakeContacts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appburger.HNFakeContacts.HNFakeContacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA301E931E3A422D00E98263 /* Build configuration list for PBXProject "HNFakeContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA301EAB1E3A422D00E98263 /* Debug */,
+				FA301EAC1E3A422D00E98263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA301EAD1E3A422D00E98263 /* Build configuration list for PBXNativeTarget "HNFakeContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA301EAE1E3A422D00E98263 /* Debug */,
+				FA301EAF1E3A422D00E98263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FA301EA21E3A422D00E98263 /* HNFakeContacts.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA301EA31E3A422D00E98263 /* HNFakeContacts.xcdatamodel */,
+			);
+			currentVersion = FA301EA31E3A422D00E98263 /* HNFakeContacts.xcdatamodel */;
+			path = HNFakeContacts.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FA301E901E3A422D00E98263 /* Project object */;
+}
