@@ -1,5 +1,6 @@
 # HNFakeContacts
 ![OpalImagePicker](https://github.com/sunlight3d/HNFakeContacts/blob/master/images/mainscreen.png)
+
 [![Version](https://img.shields.io/cocoapods/v/OpalImagePicker.svg?style=flat)](http://cocoadocs.org/docsets/OpalImagePicker)
 [![License](https://img.shields.io/cocoapods/l/OpalImagePicker.svg?style=flat)](http://cocoadocs.org/docsets/OpalImagePicker)
 ![Swift](https://img.shields.io/badge/%20in-swift%203.0-orange.svg)
@@ -21,6 +22,7 @@ Download code and open .xcworkspace file. If error occurs, please contact with a
 
 ## Author
 Name: Nguyen Duc Hoang
+
 Skype: sunlight3d@outlook.com
 
 Facebook: https://www.facebook.com/nguyen.duc.hoang.bk
